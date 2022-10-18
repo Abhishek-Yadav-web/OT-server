@@ -39,5 +39,11 @@ app.use('/api/v1',orderRouter);
 app.use('/api/v1',wishlistRouter);
 app.use('/api/v1',paymentRouter);
 
+app.get('/api/v1/test', (req,res) => {
+    res.json({
+        messgae : "test is working"
+    })
+})
+
 // export app
 module.exports = app
