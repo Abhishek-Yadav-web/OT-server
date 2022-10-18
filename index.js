@@ -4,7 +4,7 @@ const app = require('./app.js');
 
 
 // server connection
-app.listen(process.env.PORT || 5000,()=>{
+app.listen(process.env.PORT || 5001,()=>{
     console.log(`Server is running 🚀`);
 
     // Mongo Config
