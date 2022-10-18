@@ -33,7 +33,7 @@ const wishlistRouter = require('./router/wishlist');
 const paymentRouter = require('./router/payment');
 
 app.use(homeRouter);
-app.use(productRouter);
+app.use('/api/v1',productRouter);
 app.use('/api/v1',userRouter);
 app.use('/api/v1',orderRouter);
 app.use('/api/v1',wishlistRouter);
